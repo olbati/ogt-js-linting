@@ -1,0 +1,22 @@
+<div class="jumbotron">
+  <form name="myForm">
+  <h4>introduire le nombre</h4>
+  <p class="lead">
+    <label>n :
+      <input type="number" name="input" ng-model="number.value"
+             min="0" max="100" required>
+    </label>
+  <div role="alert">
+    <span class="error" ng-show="myForm.input.$error.required">
+      Required!</span>
+  </div>
+  </p>
+  </form>
+</div>
+
+<div class="row marketing">
+  <h3>Resultat</h3>
+  <p>
+    {{result}}
+  </p>
+</div>
